@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/pet-house.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <title>Contact Us</title>
+</head>
+<body>
+    <a href = "#main" class="skip">Skip to Main Content</a>
+    <header>
+    <nav>
+        <ul>
+            <img src="images/ComeToTheRescue.png" alt=""/>
+            <li><a class="current" href = "index.html" >Home</a></li>
+            <li><a href = "foster.html">To Foster</a></li>
+            <li><a href = "adopt.html">To Adopt</a></li>
+            <li><a href = "contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="overview">
+        <h1>Any Questions?</h1>
+            <p>We would love to hear from you!</p>
+            <p>Leave a comment and we will get back to you!</p><br>
+        </div>
+
+        <!-- <form class="form-container">
+            <fieldset>
+                <legend>Comment and contact information</legend>
+                <div>
+                    <label for="contact-name">Name:</label><br>
+                    <textarea name="contactName" id="contact-name" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label><br>
+                    <textarea name="phoneNum" id="phone" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <textarea name="emailAdd" id="email" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="comment">Comments:</label><br>
+                    <textarea name="commentText" id="comment" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Submit!">
+            </fieldset>
+        </form> -->
+        <form id="contactForm">
+            <fieldset>
+              <legend>Contact Information</legend>
+
+              <label for="name" class="required">Name:</label>
+              <input type="text" class="textarea1" id="name" name="name" required>
+
+              <label for="phone" class="required">Phone:</label>
+              <input type="tel" class="textarea1" id="phone" name="phone" required>
+
+              <label for="email" class="required">Email:</label>
+              <input type="email" class="textarea1" id="email" name="email" required>
+
+              <label for="comments" class="required">Comments:</label>
+              <textarea id="comments" class="textarea2" name="comments" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred contact method:</legend>
+
+                <input type="checkbox" class="pref-phone" id="contactByPhone" name="contactByPhone">
+                <label for="contactByPhone" class="pref-phone">By phone</label><br>
+
+                <input type="checkbox" class="pref-email" id="contactByEmail" name="contactByEmail">
+                <label for="contactByEmail" class="pref-email">By email</label>
+            </fieldset>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+    </main>
+
+    <footer>
+        <p>University of Michigan School of Information <br/>
+          &copy; Yi-Chun Wang - Web Design Fall 2023</p>
+      </footer>
+
+      <script src="js/contactForm.js"></script>
+</body>
+</html>
