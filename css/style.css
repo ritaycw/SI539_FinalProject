@@ -80,7 +80,7 @@ nav {
   background: white;
   left: 0;
   padding: 6px;
-  -webkit-transition: top 1s ease-out;
+  /* -webkit-transition: top 1s ease-out; */
   transition: top 1s ease-out;
   z-index: 1;
 }
@@ -115,7 +115,7 @@ footer{
   }
 
   .skip a{
-    -webkit-transition: none;
+    /* -webkit-transition: none; */
     transition: none !important;
   }
 
@@ -524,25 +524,6 @@ button:hover {
   margin-top: 20px;
 }
 
-
-
-#contact-overview {
-  height: 200px;
-  background-image: linear-gradient(to right,
-        url('../images/cat3.jpeg') 0%,
-        url('../images/dog2.jpeg') 25%,
-        url('../images/cat4.jpeg') 50%,
-        url('../images/dog1.jpeg') 75%,
-        url('../images/cat2.jpeg') 100%
-      );
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: white; /* Text color on top of the images */
-      text-align: center;
-      font-size: 24px;
-}
 
 .contact-info {
   margin-top: 10px;
