@@ -15,13 +15,22 @@
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>To Foster</title>
+
+    <script>
+      setInterval(function(){
+      var imageBar = document.getElementById('imageBar');
+      var tmp = imageBar.innerHTML;
+      container.innerHTML= tmp;
+      }, 35000 // length of the whole show in milliseconds
+      );
+    </script>
 </head>
 <body>
     <a href = "#main" class="skip">Skip to Main Content</a>
     <header>
     <nav>
+      <img src="images/ComeToTheRescue.png" alt="Come To The Rescue Logo"/>
         <ul>
-            <img src="images/ComeToTheRescue.png" alt=""/>
             <li><a href = "index.html" >Home</a></li>
             <li><a class="current" href = "foster.html">To Foster</a></li>
             <li><a href = "adopt.html">To Adopt</a></li>
@@ -30,8 +39,25 @@
     </nav>
     </header>
 
-    <main class="foster-container" id = "main">
-        <div class = overview>
+    <main id = "main">
+      <div class="image-bar" id="imageBar">
+        <a href="https://www.petfinder.com/cat/teryan-bonded-to-tamara-69452775/mi/ypsilanti/come-to-the-rescue-mi943/"><img src="images/fostercat1.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/dog/joy-must-apply-at-barkbarkwagorg-69926770/mi/livonia/bark-bark-wag-dog-rescue-mi1025/"><img src="images/fosterdog1.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/cat/ro-65439111/mi/ypsilanti/come-to-the-rescue-mi943/"><img src="images/fostercat2.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/dog/fiona-59347621/mi/plymouth/bottle-babies-rescue-mi1002/"><img src="images/fosterdog2.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/cat/need-foster-for-kittens-69030012/mi/ypsilanti/come-to-the-rescue-mi943/"><img src="images/fostercat3.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/dog/oshkosh-noah-noah-69831502/mi/wayne/greythounds-of-eastern-michigan-mi193/"><img src="images/fosterdog3.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/cat/ammi-gorgeous-and-super-friendly-69018299/mi/ypsilanti/come-to-the-rescue-mi943/"><img src="images/fostercat4.jpeg" alt="Image 1"></a>
+        <a href="hhttps://www.petfinder.com/dog/jingle-must-apply-at-barkbarkwagorg-69926212/mi/livonia/bark-bark-wag-dog-rescue-mi1025/"><img src="images/fosterdog4.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/cat/brisee-rare-coat-color-maine-coon-mix-68807465/mi/ypsilanti/come-to-the-rescue-mi943/"><img src="images/fostercat5.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/dog/nash-69803057/mi/ann-arbor/humane-society-of-huron-valley-mi175/"><img src="images/fosterdog5.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/cat/bevely-65438672/mi/ypsilanti/come-to-the-rescue-mi943/"><img src="images/fostercat6.jpeg" alt="Image 1"></a>
+        <a href="https://www.petfinder.com/dog/wally-65556376/mi/plymouth/bottle-babies-rescue-mi1002/"><img src="images/fosterdog6.jpeg" alt="Image 1"></a>
+
+      </div>
+
+      <div class="foster-container" >
+        <div class = overview tabindex="0">
           <h1>Keep Me Company!</h1>
           <p>At Come To The Rescue, we rely on our foster families.
             They are the backbone of our mission; for it is only in a loving home that our 'thrown away' animals learn once more how to play, how to trust and how to love. 
@@ -43,7 +69,7 @@
           <img src="images/cat6.jpeg" alt="A white and orange kitten"/>
         </div>
 
-        <div class="cat-text-block"><a href="https://www.petfinder.com/search/cats-for-adoption/?days_on_petfinder=30&shelter_id%5B0%5D=MI943&sort%5B0%5D=recently_added">
+        <div class="cat-text-block" tabindex="0"><a href="https://www.petfinder.com/search/cats-for-adoption/?days_on_petfinder=30&shelter_id%5B0%5D=MI943&sort%5B0%5D=recently_added">
           <h2>Cats/Kittens</h2>
           <p>Learn more about fostering cats</p>
         </a></div>
@@ -52,7 +78,7 @@
           <img src="images/dog7.jpeg" alt="A white and brown puppy"/>
         </div>
 
-        <div class="dog-text-block"><a href="https://www.petfinder.com/search/dogs-for-adoption/?days_on_petfinder=30&shelter_id%5B0%5D=MI943&sort%5B0%5D=recently_added">
+        <div class="dog-text-block" tabindex="0"><a href="https://www.petfinder.com/search/dogs-for-adoption/?days_on_petfinder=30&shelter_id%5B0%5D=MI943&sort%5B0%5D=recently_added">
           <h2>Dogs/Puppies</h2>
           <p>Learn more about fostering dogs</p>
         </a></div>
@@ -61,10 +87,11 @@
           <img src="images/others4.jpeg" alt="A orange rabbit held by hands"/>
         </div>
 
-        <div class="others-text-block"><a href="https://www.petfinder.com/search/rabbits-for-adoption/?days_on_petfinder=30&shelter_id%5B0%5D=MI943&sort%5B0%5D=recently_added">
+        <div class="others-text-block" tabindex="0"><a href="https://www.petfinder.com/search/rabbits-for-adoption/?days_on_petfinder=30&shelter_id%5B0%5D=MI943&sort%5B0%5D=recently_added">
           <h2>Others</h2>
           <p>Learn more about fostering other animals</p>
         </a></div>
+      </div>
     </main>
       <footer>
         <p>University of Michigan School of Information <br/>

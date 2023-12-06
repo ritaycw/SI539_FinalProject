@@ -1,23 +1,75 @@
-function submitForm() {
+// function submitForm() {
+    // var name = document.getElementById("name").value;
+//     var phone = document.getElementById("phone").value;
+//     var email = document.getElementById("email").value;
+//     var comments = document.getElementById("comments").value;
+
+//     var contactByPhone = document.getElementById("contactByPhone").checked;
+//     var contactByEmail = document.getElementById("contactByEmail").checked;
+
+//     console.log("Name: " + name);
+//     console.log("Phone: " + phone);
+//     console.log("Email: " + email);
+//     console.log("Contact by Phone: " + contactByPhone);
+//     console.log("Contact by Email: " + contactByEmail);
+//     console.log("Comments: " + comments);
+//     console.log("Contact By Phone: " + contactByPhone);
+//     console.log("Contact By Email: " + contactByEmail);
+
+//     document.getElementById("contactForm").reset();
+//   }
+
+
+  function validateForm() {
     var name = document.getElementById("name").value;
     var phone = document.getElementById("phone").value;
     var email = document.getElementById("email").value;
     var comments = document.getElementById("comments").value;
 
-    var contactByPhone = document.getElementById("contactByPhone").checked;
-    var contactByEmail = document.getElementById("contactByEmail").checked;
+    if (name === '') {
+        document.getElementById("nameError").style.display = "block";
+        return false;
+    } else {
+        document.getElementById("nameError").style.display = "none";
+    }
 
-    // You can perform further validation or send the data to a server here
-    // For a simple demonstration, we'll just log the data to the console
-    console.log("Name: " + name);
-    console.log("Phone: " + phone);
-    console.log("Email: " + email);
-    console.log("Contact by Phone: " + contactByPhone);
-    console.log("Contact by Email: " + contactByEmail);
-    console.log("Comments: " + comments);
-    console.log("Contact By Phone: " + contactByPhone);
-    console.log("Contact By Email: " + contactByEmail);
+    if (phone === '') {
+        document.getElementById("phoneError").style.display = "block";
+        return false;
+    } else {
+        document.getElementById("phoneError").style.display = "none";
+    }
 
-    // Reset the form after submission
-    document.getElementById("contactForm").reset();
+    if (email === '') {
+        document.getElementById("emailError").style.display = "block";
+        return false;
+    } else {
+        document.getElementById("emailError").style.display = "none";
+    }
+
+    if (comments === '') {
+        document.getElementById("commentsError").style.display = "block";
+        return false;
+    } else {
+        document.getElementById("commentsError").style.display = "none";
+    }
+
+    return true;
+}
+
+function submitForm() {
+  if (validateForm()) {
+      alert("Thank you! Form submitted successfully!");
+
+      console.log("Name: " + name);
+      console.log("Phone: " + phone);
+      console.log("Email: " + email);
+      console.log("Contact by Phone: " + contactByPhone);
+      console.log("Contact by Email: " + contactByEmail);
+      console.log("Comments: " + comments);
+      console.log("Contact By Phone: " + contactByPhone);
+      console.log("Contact By Email: " + contactByEmail);
+
+      document.getElementById("contactForm").reset();
   }
+}
