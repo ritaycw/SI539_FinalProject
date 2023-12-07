@@ -80,7 +80,6 @@ nav {
   background: white;
   left: 0;
   padding: 6px;
-  /* -webkit-transition: top 1s ease-out; */
   transition: top 1s ease-out;
   z-index: 1;
 }
@@ -115,7 +114,6 @@ footer{
   }
 
   .skip a{
-    /* -webkit-transition: none; */
     transition: none !important;
   }
 
@@ -462,14 +460,9 @@ button:hover {
 }
 
 .foster-container p a:hover {
-  /* text-shadow: #8b8c89; */
   text-shadow: 3px 3px 4px black;
 }
 
-/* .cat-text-block h2, .dog-text-block h2, .others-text-block h2,
-.cat-text-block p, .dog-text-block p, .others-text-block p {
-  color: black;
-} */
 .foster-container div:nth-child(3) *, .foster-container div:nth-child(5) *, .foster-container div:nth-child(7) * {
   color: black;
   text-decoration: none;
